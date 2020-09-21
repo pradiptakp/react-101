@@ -24,7 +24,8 @@ Apabila sudah memahami JavaScript, sekarang waktunya kita masuk ke **Fundamental
 ### 1. Instalasi dan Create App
 
 - Install npm and Node JS: https://www.npmjs.com/get-npm
-- Run `npx create-react-app` atau clone starter dari: [react js starter anggapradipta](https://github.com/pradiptakp/react-101/branches)
+- Run `npx create-react-app` atau clone starter dari sini:
+  - [**react-basic**](https://github.com/pradiptakp/react-101/tree/master/react-basic): Setup React sederhana yang mencakup routing, autentikasi dasar dan fetching data.
 - Apabila melakukan clone, run `npm install` untuk melakukan install _node modules_ atau kumpulan dari library yang terdaftar di package.json
 - Untuk run debug bisa gunakan `npm start`
 
