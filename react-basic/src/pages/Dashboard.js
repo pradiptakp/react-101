@@ -22,28 +22,41 @@ import {
 } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { logout } from "utils/auth";
-import axios from "axios";
-import { GET_FILMS } from "constants/urls";
+// import axios from "axios";
+// import { GET_FILMS } from "constants/urls";
+import { connect } from 'react-redux';
+import { getFilmsData } from '../actions/app';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   const history = useHistory();
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
   const [film, setFilm] = React.useState();
 
   React.useEffect(() => {
-    axios
-      .get(GET_FILMS)
-      .then((res) => {
+    // axios
+    //   .get(GET_FILMS)
+    //   .then((res) => {
+    //     setLoading(false);
+    //     setFilm(res.data);
+    //   })
+    //   .catch((err) => {
+    //     setLoading(false);
+    //     setError(true);
+    //     console.warn(err);
+    //   });
+    props.getFilmsData(
+      response => {
         setLoading(false);
-        setFilm(res.data);
-      })
-      .catch((err) => {
+        setFilm(response);
+      },
+      error => {
         setLoading(false);
         setError(true);
-        console.warn(err);
-      });
-    return () => {};
+        console.warn(error);
+      }
+    )
+    return () => { };
   }, []);
 
   const _onLogout = () => {
@@ -111,11 +124,23 @@ const Dashboard = () => {
               );
             })
         ) : (
-          error && <Alert variant="danger">Error bang</Alert>
-        )}
+              error && <Alert variant="danger">Error bang</Alert>
+            )}
       </Container>
     </div>
   );
 };
 
-export default Dashboard;
+
+const mapStateToProps = state => ({
+
+});
+
+const mapDispatchToProps = {
+  getFilmsData,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Dashboard);
