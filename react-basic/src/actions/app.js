@@ -8,3 +8,11 @@ export const getFilmsData = (onSuccess, onFailure) => {
     onFailure,
   };
 };
+
+export const updateState = (payload) => {
+  const type = types.APP.UPDATE_STATE;
+  return {
+    type,
+    payload,
+  };
+};

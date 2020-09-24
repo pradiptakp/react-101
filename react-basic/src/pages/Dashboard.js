@@ -22,10 +22,9 @@ import {
 } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { logout } from "utils/auth";
-// import axios from "axios";
-// import { GET_FILMS } from "constants/urls";
 import { connect } from 'react-redux';
-import { getFilmsData } from '../actions/app';
+import { getFilmsData, updateState } from '../actions/app';
+import { updateStateNotPersist } from '../actions/auth';
 
 const Dashboard = (props) => {
   const history = useHistory();
@@ -34,17 +33,7 @@ const Dashboard = (props) => {
   const [film, setFilm] = React.useState();
 
   React.useEffect(() => {
-    // axios
-    //   .get(GET_FILMS)
-    //   .then((res) => {
-    //     setLoading(false);
-    //     setFilm(res.data);
-    //   })
-    //   .catch((err) => {
-    //     setLoading(false);
-    //     setError(true);
-    //     console.warn(err);
-    //   });
+    props.updateStateNotPersist({body: true})
     props.getFilmsData(
       response => {
         setLoading(false);
@@ -59,6 +48,18 @@ const Dashboard = (props) => {
     return () => { };
   }, []);
 
+  React.useEffect(() => {
+    console.log(`props.testState`)
+    console.log(props.testState)
+    return () => {}
+  }, [props.testState])
+
+  React.useEffect(() => {
+    console.log(`props.testStateNotPersist`)
+    console.log(props.testStateNotPersist)
+    return () => {}
+  }, [props.testState])
+  
   const _onLogout = () => {
     logout();
     history.replace("/");
@@ -133,11 +134,14 @@ const Dashboard = (props) => {
 
 
 const mapStateToProps = state => ({
-
+  testState: state?.app?.testState,
+  testStateNotPersist: state?.auth?.testStateNotPersist,
 });
 
 const mapDispatchToProps = {
   getFilmsData,
+  updateState,
+  updateStateNotPersist,
 };
 
 export default connect(
