@@ -83,9 +83,26 @@ Ini adalah salah satu komponen yang membuat **React JS** populer. Komposisi memu
 
 ### 9. Basic Hooks
 
-React Hooks mempermudah developer dalam melakukan manajemen _Life Cycle_ dari komponen react dan juga mengolah data. Sebelum hooks syntax syntax bawaan dari React seperti `this.setState` dan `this.state` serta fungsi _Life Cycle_ dari React seperti `componentWillMount` dan `componentDidMount` masih sering digunakan. Namun dengan adanya Hooks, semua itu dapat di handle oleh beberapa fungsi dasar seperti `useState` dan `useEffect`.
+React Hooks mempermudah developer dalam melakukan manajemen _Life Cycle_ dari komponen react dan juga mengolah data. Sebelum hooks syntax syntax bawaan dari React seperti `this.setState` dan `this.state` serta fungsi _Life Cycle_ dari React seperti `componentWillMount` dan `componentDidMount` masih sering digunakan. Namun dengan adanya Hooks, semua itu dapat di handle oleh beberapa fungsi dasar seperti `useState` dan `useEffect`. 
+
+Fungsi `useEffect` dipanggil saat layar pertama kali di mount, fungsi ini juga dapat melakukan listen pada perubahan suatu state atau data pada layar. Fungsi `useState` dapat digunakan untuk mengolah data pada screen dengan mudah, anggap variabel yang menggunakan `useState` sebagai variabel yang hanya dimiliki layar tersebut dan developer dapat menggunakan data dalam state untuk melakukan berbagai hal seperti conditional rendering, looping view, dll.
 
 > Referensi:
 >
 > - https://reactjs.org/docs/hooks-intro.html
 > - https://www.valentinog.com/blog/hooks/
+
+## Useful Libraries
+Berikut adalah beberapa library yang sangat berguna dan sering digunakan oleh developer untuk mengembangkan aplikasi *React JS*
+
+### 1. React Router
+Digunakan untuk routing pada applikasi
+> https://reactrouter.com/web/guides/quick-start
+
+### 2. Axios
+Digunakan untuk fetch API calls
+> https://www.digitalocean.com/community/tutorials/react-axios-react
+
+### 3. Formik
+Digunakan untuk mempermudah membuat form
+> https://formik.org/docs/overview
