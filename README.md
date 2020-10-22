@@ -106,3 +106,11 @@ Digunakan untuk fetch API calls
 ### 3. Formik
 Digunakan untuk mempermudah membuat form
 > https://formik.org/docs/overview
+
+### 4. React Bootstrap
+Styling React menggunakan komponen komponen dari bootstrap
+> https://react-bootstrap.github.io/getting-started/introduction/
+
+## Link link berguna:
+https://github.com/adam-golab/react-developer-roadmap
+https://github.com/enaqx/awesome-react
