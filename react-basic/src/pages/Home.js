@@ -5,6 +5,7 @@
 import React from "react";
 import { Button, Container, Nav, Navbar, Jumbotron } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { timestamp } from '../libraries/moment'
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         <Container>
           <h1>Hello, world!</h1>
           <p>Jadi ini ceritanya contoh sederhana implementasi React</p>
+          <p>The time now is: {timestamp}</p>
         </Container>
       </Jumbotron>
     </div>
