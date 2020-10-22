@@ -6,14 +6,14 @@
 
 import React from "react";
 import { Button, Container, Navbar, Form, Alert } from "react-bootstrap";
-import { Link, Redirect } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { login } from "utils/auth";
 
 const Home = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState(false);
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const history = useHistory()
 
   React.useEffect(() => {
     if (email || password) {
@@ -27,7 +27,7 @@ const Home = () => {
       login({
         email: email,
       });
-      setIsLoggedIn(true);
+      history.push("/dashboard");
     } else {
       setError(true);
     }
@@ -35,7 +35,6 @@ const Home = () => {
 
   return (
     <div>
-      {isLoggedIn && <Redirect to="/dashboard" />}
       <Navbar bg="light" expand="lg">
         <Container>
           <Link to="/">
