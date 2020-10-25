@@ -124,6 +124,6 @@ Digunakan untuk mempermudah mengolah format waktu
 > https://momentjs.com/
 
 ## Link link berguna:
-https://github.com/adam-golab/react-developer-roadmap (roadmap)
-https://github.com/enaqx/awesome-react (list sinau React JS terluengkap sejagat raya)
-https://github.com/brillout/awesome-react-components
+- https://github.com/adam-golab/react-developer-roadmap (roadmap)
+- https://github.com/enaqx/awesome-react (list sinau React JS terluengkap sejagat raya)
+- https://github.com/brillout/awesome-react-components
