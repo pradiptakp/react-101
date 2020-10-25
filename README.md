@@ -112,6 +112,8 @@ Banyak pilihan UI kit yang bisa dipakai untuk membantu membuat komponen view dar
 > https://github.com/lucianomlima/react-ui-kits (list lengkap React UI Kits)
 > https://blog.logrocket.com/top-7-ui-libraries-and-kits-for-react/
 > https://react-bootstrap.github.io/getting-started/introduction/
+> https://blog.bitsrc.io/5-ways-to-style-react-components-in-2019-30f1ccc2b5b
+https://medium.com/@byciikel/konfigurasi-tailwind-css-di-react-js-1c70a86fa359 (be'e pengen nggae tailwind)
 
 ### 3. Formik
 Digunakan untuk mempermudah membuat form
@@ -124,3 +126,4 @@ Digunakan untuk mempermudah mengolah format waktu
 ## Link link berguna:
 https://github.com/adam-golab/react-developer-roadmap (roadmap)
 https://github.com/enaqx/awesome-react (list sinau React JS terluengkap sejagat raya)
+https://github.com/brillout/awesome-react-components
