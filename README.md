@@ -6,8 +6,9 @@
 
 Sebelum masuk ke komponen dan koding, ada beberapa link referensi yang berisi informasi perihal apa itu **React JS** dan mengapa belajar **React JS ** dapat bermanfaat untuk kalian:
 
-- [What Is React (React js) & Why Is It So Popular?](https://www.youtube.com/watch?v=N3AkSS5hXMA)
-- [Tutorial Resmi React JS](https://reactjs.org)
+- [Tutorial Resmi React JS](https://reactjs.org) (dokumentasi)
+- [What Is React (React js) & Why Is It So Popular?](https://www.youtube.com/watch?v=N3AkSS5hXMA) (video)
+- [React Tutorial For Beginners](https://www.youtube.com/watch?v=dGcsHMXbSOA) (video)
 
 ## Roadmap
 
@@ -40,7 +41,7 @@ Apabila sudah memahami JavaScript, sekarang waktunya kita masuk ke **Fundamental
 > - https://www.w3schools.com/react/react_jsx.asp
 > - https://reactjs.org/docs/introducing-jsx.html
 
-### 3. Functional vs Class Components
+### 3. Functional vs Class  (Pakai functional saja :D)
 
 Pengunaan function dan class dalam penulisan koding memiliki perbedaan syntax dan fungsional yang mempengaruhi pengolahan data dalam React
 
@@ -63,7 +64,7 @@ Dengan menggunakan data dari props atau state, developer dapat melakukan conditi
 
 ### 6. Component Life Cycle
 
-**Component Life Cycle** adalah siklus dari komponen yang digunakan untuk me-render tampilan dari web. Siklus ini memang terlihat agak rumit, beruntung nya sekarang sudah ada hooks yang salah satu kegunaannya adalah untuk menyederhanakan life cycle dari **React JS**.
+**Component Life Cycle** adalah siklus dari komponen yang digunakan untuk me-render tampilan dari web. Siklus ini memang terlihat agak rumit, beruntung nya sekarang sudah ada hooks yang salah satu kegunaannya adalah untuk menyederhanakan life cycle dari **React JS**. Life cycle ini sangat dipermudah dengan pengunaan hooks.
 
 > https://medium.com/codeacademia/apa-itu-component-lifecycle-di-react-bfcb64f64e0e
 
@@ -88,30 +89,38 @@ React Hooks mempermudah developer dalam melakukan manajemen _Life Cycle_ dari ko
 Fungsi `useEffect` dipanggil saat layar pertama kali di mount, fungsi ini juga dapat melakukan listen pada perubahan suatu state atau data pada layar. Fungsi `useState` dapat digunakan untuk mengolah data pada screen dengan mudah, anggap variabel yang menggunakan `useState` sebagai variabel yang hanya dimiliki layar tersebut dan developer dapat menggunakan data dalam state untuk melakukan berbagai hal seperti conditional rendering, looping view, dll.
 
 > Referensi:
+https://reactjs.org/docs/hooks-intro.html
+https://www.valentinog.com/blog/hooks/
 >
-> - https://reactjs.org/docs/hooks-intro.html
-> - https://www.valentinog.com/blog/hooks/
+> Link Belajar
+https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A
+
+### 10. React Routing
+Digunakan untuk routing pada applikasi
+> https://reactrouter.com/web/guides/quick-start
+> https://www.youtube.com/watch?v=Law7wfdg_ls&t=795s
 
 ## Useful Libraries
 Berikut adalah beberapa library yang sangat berguna dan sering digunakan oleh developer untuk mengembangkan aplikasi *React JS*
 
-### 1. React Router
-Digunakan untuk routing pada applikasi
-> https://reactrouter.com/web/guides/quick-start
-
-### 2. Axios
+### 1. Axios
 Digunakan untuk fetch API calls
 > https://www.digitalocean.com/community/tutorials/react-axios-react
+
+### 2. React UI KIT (Bootstrap, Material UI, dll)
+Banyak pilihan UI kit yang bisa dipakai untuk membantu membuat komponen view dari *React JS*. yang dicontohkan di repo ini pakai react bootstrap
+> https://github.com/lucianomlima/react-ui-kits (list lengkap React UI Kits)
+> https://blog.logrocket.com/top-7-ui-libraries-and-kits-for-react/
+> https://react-bootstrap.github.io/getting-started/introduction/
 
 ### 3. Formik
 Digunakan untuk mempermudah membuat form
 > https://formik.org/docs/overview
 
-### 4. React Bootstrap
-Styling React menggunakan komponen komponen dari bootstrap
-> https://react-bootstrap.github.io/getting-started/introduction/
+### 4. Moment JS
+Digunakan untuk mempermudah mengolah format waktu
+> https://momentjs.com/
 
 ## Link link berguna:
-https://github.com/adam-golab/react-developer-roadmap
-
-https://github.com/enaqx/awesome-react
+https://github.com/adam-golab/react-developer-roadmap (roadmap)
+https://github.com/enaqx/awesome-react (list sinau React JS terluengkap sejagat raya)
